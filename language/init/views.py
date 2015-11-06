@@ -74,8 +74,8 @@ def init(request):
 
 def popCategory(name):
     category = Category.objects.get_or_create(name=name,
-                                           views=random.randint(0,20),
-                                           likes=random.randint(0,20))[0]
+                                              views=random.randint(0,20),
+                                              likes=random.randint(0,20))[0]
     return category
 
 def popPage(category, title, url, views=0):
